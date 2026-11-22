@@ -29,3 +29,23 @@ input:focus-visible {
     scroll-behavior: auto !important;
   }
 }
+
+/* Keep the newsletter controls usable on narrow phone screens. */
+@media (max-width: 575.98px) {
+  .newsletter-form .input-group {
+    flex-wrap: nowrap;
+  }
+
+  .newsletter-form .form-control {
+    min-width: 0;
+  }
+
+  .newsletter-form .btn {
+    flex: 0 0 auto;
+    white-space: nowrap;
+  }
+
+  .product-bottom {
+    flex-wrap: wrap;
+  }
+}
