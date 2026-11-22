@@ -32,15 +32,20 @@ document.addEventListener('DOMContentLoaded', () => {
       event.preventDefault();
       const valid = emailInput.checkValidity();
       emailInput.classList.toggle('is-invalid', !valid);
+      emailInput.setAttribute('aria-invalid', String(!valid));
       if (!valid) {
         emailInput.focus();
         return;
       }
       emailInput.classList.remove('is-invalid');
+      emailInput.setAttribute('aria-invalid', 'false');
       if (formMessage) formMessage.textContent = 'Thanks for your interest! This is a front-end demo, so no subscription was saved.';
       newsletterForm.reset();
     });
-    emailInput.addEventListener('input', () => emailInput.classList.remove('is-invalid'));
+    emailInput.addEventListener('input', () => {
+      emailInput.classList.remove('is-invalid');
+      emailInput.setAttribute('aria-invalid', 'false');
+    });
   }
 
   // Close the mobile navigation after selecting an in-page destination.
