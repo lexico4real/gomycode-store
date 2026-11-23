@@ -1,7 +1,44 @@
-# Screenshot submission checklist
+# Screenshots
 
-Capture the page in a browser after opening `../index.html`.
+This folder contains screenshots of the **FORM & FIELD – Responsive Store Landing Page**, captured at desktop and mobile viewport sizes.
 
-1. **Desktop:** Use a viewport around 1440 × 900 px. Capture the full landing page or clear full-page screenshot and save it as `desktop.png` in this folder.
-2. **Mobile:** Use browser device emulation at approximately 390 × 844 px. Check the collapsed navigation, stacked product cards, story section, newsletter and footer. Save the screenshot as `mobile.png` in this folder.
-3. Do not resize a desktop screenshot to pretend it is mobile; capture each viewport separately.
+## Desktop Screenshots
+
+| Screenshot | Description |
+|---|---|
+| `desktop.png` | Desktop view of the store landing page |
+| `desktop 2.png` | Additional desktop view showing the page layout and content |
+
+## Mobile Screenshots
+
+| Screenshot | Description |
+|---|---|
+| `mobile.png` | Mobile view of the store landing page |
+| `mobile 2.png` | Additional mobile view showing the responsive layout |
+| `mobile 3.png` | Additional mobile view showing other sections of the page |
+
+## Purpose
+
+These screenshots demonstrate the responsive design and visual presentation of the landing page across desktop and mobile screen sizes.
+
+The screenshots showcase the website's:
+
+- Responsive navigation menu
+- Hero section and promotional content
+- Product cards and shopping buttons
+- Mobile-friendly layout and spacing
+- Overall visual design and branding
+
+## Screenshot Directory Structure
+
+```text
+screenshots/
+├── desktop 2.png
+├── desktop.png
+├── mobile 2.png
+├── mobile 3.png
+├── mobile.png
+└── README.md
+```
+
+All screenshots are provided as visual references for the project submission.
